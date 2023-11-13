@@ -1,0 +1,23 @@
+syntax "proto3"
+
+package users;
+
+service UsersService {
+    rpc CreateUser (CreateUserRequest) returns (CreateUserResponse) {}
+    rpc GetUsers
+
+}
+
+message Error {
+    int32 
+}
+
+message User{
+    string id = 1;
+
+}
+
+message CreateUserRequest {}
+
+
+    
